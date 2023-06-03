@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean One</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --RoyalBlue: #03256c;
+            --PersianBlue: #2541B2;
+            --GreenBlue: #1768AC;
+            --Aero: #06BEE1;
+            --White: #FFFFFF;
+            /* font-family: 'Poppins', sans-serif; */
+            --mainFont : 'Poppins', sans-serif;
+        }
+        .nav-link.active{
+            color: var(--White) !important;
+        }
+        .nav-link.active:hover{
+            color: var(--White) !important;
+            /* background-color: var(--White); */
+            background-color: var(--Aero);
+            border-radius: 8px;
+        }
+        .home{
+            background-image: url("SectionOne.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            padding-top: 12rem;
+            padding-bottom: 6rem;
+            color: var(--White);
+        }
+        .impact{
+            background-image: url(bgImpacts.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            /* height: 100vh; */
+        }
+        .btn-outline-custom {
+            color: #fff;
+            border-color: #fff;
+            background-color: rgba(30, 30, 51, 0.5);
+            padding: 10px;
+            border-radius: 12px;
+        }
+        .btn-outline-custom:hover {
+            color: var(--Aero);
+            background-color: var(--White);
+            border-color: var(--Aero);
+        }
+        .btn-outline-custom2 {
+            color: #fff;
+            border-color: #fff;
+            background-color: var(--Aero);
+            padding: 10px;
+            border-radius: 12px;
+        }
+        .btn-outline-custom2:hover {
+            color: var(--White);
+            background-color:var(--GreenBlue);
+            border-color: var(--Aero);
+        }
+        .resc{
+            background: #FFFFFF;
+            border: 1px solid #06BEE1;
+            box-shadow: 17px 17px 22px 8px rgba(3, 37, 108, 0.03);
+            border-radius: 15px;
+            /* padding: 40px; */
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+            height: 330px;
+        }
+        .container {
+            padding: 75px;
+            padding-left: 150px;
+            padding-right: 150px;
+            padding-top: 55px;
+            /* width: 80%; */
+        }
+        .buttonY{
+            color: #fff;
+            border-color: #fff;
+            background-color: rgba(30, 30, 51, 0.5);
+            padding: 10px;
+            border-radius: 12px;
+        }
+        .clacSampah{
+            /* background-color: rgba(225, 52, 4, 0.5) ; */
+            /* background-color: var(--PersianBlue); */
+            padding-top: 60px;
+            outline: 2px dashed red;
+            padding: 10px;
+        } #detailInputItemApa button {
+            margin-left: 20px;
+            width: 70px;
+            height: 30px;
+            /* padding: 8px 16px; */
+            background-color: var(--GreenBlue);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+  }
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- bootstrap javascript -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="JSOCEANONE.js"> </script>
+
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid p-2">
+              <!-- <a class="navbar-brand" href="#">Ocean One</a> -->
+              <img src="logo.png" style="width: 35px;" class="mx-3">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                  <a class="nav-link active me-3" href="#">Action</a>
+                  <a class="nav-link active me-3" href="#resources">Resources</a>
+                  <a class="nav-link active me-3" href="#projects">Projects</a>
+                  <a class="nav-link active me-3" href="#">Explore</a>
+                </div>
+              </div>
+            </div>
+          </nav>          
+    </section>
+
+
+    <section class="home" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1> Don’t <span style="font-weight:800;">kill them</span> before they <span style="font-weight:800;">kill you! </span></h1>
+                    <br>
+                    <p class="subheading"> 
+                        A study published in the journal Scientific Reports <br> 
+                        estimated that <span style="font-weight: bold;">up to 1.9 million pieces of plastic debris are floating </span><br>
+                        in the area known as the "Great Pacific Garbage Patch" and that the total amount of <br> <span style="font-weight: bold;"> plastic in this region could be as high as 79,000 metric tons. </span>
+                    </p>
+                    <br> 
+                    <div class="btn-button">
+    
+                        <button type="button" class="btn btn-outline-custom" onclick=takeAction()>  &nbsp &nbsp &nbsp &nbsp &nbsp TAKE ACTION  &nbsp &nbsp &nbsp &nbsp &nbsp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="clacSampah" id="calcSampah">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 style="color: #03256C; font-weight: 800;"> Calculator Sampah Plastik</h1>
+                    <br> 
+                    <br> 
+                    <div id="hasil"></div>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                    <!-- container sampah calculator -->
+                    <div class="sampahCalculator">
+                        <div class="detailCalculator" id="detailInputCalculator">
+                            
+                            <div class="row mb-3">
+                                <label for="botolplastik" class="col-sm-6 col-form-label">Sampah Plastik</label> 
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" id="input1">
+                                </div>
+                              </div>
+
+                              <div class="row mb-3">
+                                <label for="botolplastik" class="col-sm-6 col-form-label">Sedotan</label> 
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" id="input2">
+                                </div>
+                              </div>
+                              <div class="row mb-3">
+                                <label for="botolplastik" class="col-sm-6 col-form-label">Rokok</label>
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" id="input3">
+                                </div>
+                              </div>
+
+
+
+                        </div>
+
+                        <!-- container button -->
+                        <div class="calculatorButton" id="calculatorButton" style="padding-top: 12px;">
+                            
+
+                            <div class="row">
+                                <div class="col-lg-6 mx-auto">
+                                    <button id="addInputField" type="button" class="btn btn-outline-custom2" onclick=tambahInputFielduntukItemAPA()>  ADD ITEM  </button>
+                                </div>
+                                <div class="col-lg-6 mx-auto">
+                                    <button id="calculate" type="button" class="btn btn-outline-custom2" onclick=calculate365()>  CALCULATE </button>
+                                </div>
+                            </div>
+
+                            <!-- <div id="hasil"></div> -->
+
+                      <div style="padding-top:20px">
+                        <div id="detailInputItemApa"> </div>
+                      </div>
+
+                      <!-- <div class="detailCalculator" id="detailInputItemApa">
+                      </div> -->
+
+                      <!-- container hasil -->
+                      <div>
+                      <div id="hasil"></div>
+                      
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="resources">
+        <div class="container" style="font-size: 12px;">
+            <div class="row">
+                <div class="col">
+                    <h1 style="color: #1768AC; font-weight: 800;"> OFFSET YOUR <br> PLASTIC FOOTPRINT </h1>
+                    <br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="resc">
+                        <div class="detail">
+                            <h2 class="label"> Align </h2> 
+                            <br>
+                            <p class="desc"> 66% of people (73% of Millennials) are willing to pay more for products and services from companies committed to positive social and environmental impact.</p>
+                            <!-- <br> -->
+                            <button type="button" class="btn btn-outline-custom2"> &nbsp &nbsp Learn More &nbsp &nbsp </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="resc">
+                        <div class="detail">
+                            <h2 class="label"> Kickstart </h2>
+                            <br>
+                            <p class="desc">Ocean One are a turnkey solution to begin the journey of reducing your business’s environmental footprint or going plastic neutral.</p>
+                            <!-- <br> <br><br> -->
+                            <br> <br>
+                            <button type="button" class="btn btn-outline-custom2"> &nbsp &nbsp Start Action &nbsp &nbsp</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 pb-5">
+                    <div class="resc">
+                        <div class="detail">
+                            <h2 class="label"> Amplify </h2>
+                            <br>
+                            <p class="desc"> Is your actions already making strides in its commitment to sustainability? Measure your action success using IMPACT</p>
+                            <!-- <br> <br> <br> -->
+                            <br> <br>
+                            <button type="button" class="btn btn-outline-custom2"> &nbsp &nbsp See How &nbsp &nbsp   </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="impact pt-4 pb-5">
+            <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <p class="text-white" style="font-size: 20px;" > MAKE <br> <span style="font-size: 40px; font-weight: bold;"> YOUR IMPACT </span></p>
+                    <br><br>
+                </div>
+
+                <div class="row pt-5 pb-5" style="background-color: #06BEE1; box-shadow: 27px 36px 30px rgba(37, 55, 130, 0.6); border-radius: 40px;">
+                <div class="col-lg-3 mx-auto">
+                    <div class="impact-desc">
+                        <div class="detail">
+                            <img src="impact1.png">
+                            <p class="text-white pt-4">COMMIT TO <span style="font-weight: bold;">REMOVING A SPECIFIC AMOUNT </span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mx-auto">
+                    <div class="impact-desc">
+                        <div class="detail">
+                            <img src="impact2.png">
+                            <p class="text-white pt-4"> TIE <span style="font-weight: bold;">REMOVAL TO PRODUCT SALES  </span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mx-auto">
+                    <div class="impact-desc">
+                        <div class="detail">
+                            <img src="impact3.png">
+                            <p class="text-white pt-4"><span style="font-weight: bold;">INCENTIVIZE COMMUNITY</span> ACTIONS </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+
+
+    <section id="projects">
+            <div class="container" >
+            <div class="row">
+                <div class="col">
+                    <p style="font-size: 20px;color: #2541B2;" > PROJECT 1: <br> <span style="font-size: 40px; font-weight: bold;"> OCEANBOUND CLEAN UP </span></p>
+                    <br><br>
+                </div>
+
+                <div class="row" style="font-size: 13px;">
+                <div class="col-lg-6 mx-auto">
+                    <div class="impact-desc">
+                        <div class="detail">
+                            <img src="p11.png" style="width: 400px">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mx-auto">
+                    <div class="impact-desc">
+                        <div class="detail">
+                            <h2 style="font-weight: 600; color: #03256c">PROBLEMS</h2>
+                            <p style="color: #2541B2;">Plastic recycling generates plastic waste effluent as a standard part of the process. This dirty discharge known as "Mud" is at risk of being discharged into the wastewater and, in the best-case, is usually taken to the nearest landfill.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                <div class="col-lg-6 mx-auto">
+                    <div class="impact-desc">
+                        <div class="detail">
+                            <h2 style="text-align: right ; font-weight: 600 ; color: #03256c">SOLUTIONS</h2>
+                            <p style="text-align: right; color: #2541B2;"><span style="font-width:bold">Repurposes the “Mud” into useful building materials.</span> It's composition is perfect for producing bricks! Unfortunately, these recycled plastic compound bricks are slightly more expensive than standard building bricks, so Impac+ program incentivizes the reuse of the “Mud” in the bricks by making them competitive on the open market.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                    <div class="impact-desc">
+                        <div class="detail">
+                            <img src="p12.png" style="width: 400px">
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+    <section>
+        <div class="container"  >
+        <div class="row">
+            <div class="col">
+                <p style="font-size: 20px;color: #2541B2;" > PROJECT 2: <br> <span style="font-size: 40px; font-weight: bold;"> FISHING NET RECOVERY </span></p>
+                <br><br>
+            </div>
+
+            <div class="row " style="font-size: 13px;">
+            <div class="col-lg-6 mx-auto">
+                <div class="impact-desc">
+                    <div class="detail">
+                        <img src="p21.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mx-auto">
+                <div class="impact-desc">
+                    <div class="detail">
+                        <h2 style="font-weight: 600; color: #03256c;">PROBLEMS</h2>
+                        <p style="color: #1768AC;">Fishing gear - nets and ropes - pose a significant risk to sea life if cut away in the ocean. Unfortunately, incentives do not exist to recover this gear so at the end of its life, most gets landfilled or simply cut away at sea. It's a huge reason for why fishing nets are the largest ocean plastic polluter.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+            <div class="col-lg-6 mx-auto">
+                <div class="impact-desc">
+                    <div class="detail">
+                        <h2 style="text-align: right; font-weight: 600;color: #03256c">SOLUTIONS</h2>
+                        <p style="text-align: right;color: #2541B2;">We provides the funds needed to incentivize collection and recycling of this gear. This program creates a pathway for the reclamation of end of life fishing gear.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mx-auto">
+                <div class="impact-desc">
+                    <div class="detail">
+                        <img src="p22.png" style="width: 400px">
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section style="background-color: #1768AC;">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <p style="font-size: 20px; color: #FFFFFF;" > <span style="font-size: 40px; font-weight: bold;"> GET IN TOUCH </span> <br> <span style="color: #06BEE1;">with us! </span></p>
+                    <br><br>
+                </div>
+
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.636778307021!2d106.79970621429322!3d-6.258041463203241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x46367ed2a8230800!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1620003899083!5m2!1sid!2sid"
+                    width="400"
+                    height="315"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"></iframe>
+                </div>
+    
+                <div class="col-lg-6 mx-auto">
+                    <div class="impact-desc">
+                        <div class="detail">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="name" placeholder="Name">
+                              </div>
+                              <div class="mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                              </div>
+                              <div class="mb-3">
+                                <input id = "message" class="form-control form-control" type="text" placeholder="Write your message here ..." aria-label=".form-control-lg example" style="height: 145px;">
+                              </div>
+                              <div class="btn-button">
+                                <button id="submit" type="button" class="btn btn-outline-custom" onclick=tampil()>  SEND </button>
+                            </div>
+
+                            <br><br>
+
+                            <div style="color: #FFFFFF;">
+                            <h5 style="color: #FFFFFF;" id="thanks" style="color:#03256C"></h5>
+                            <p id="myname"></p>
+                            <p id="contactme"></p>
+                            <p id="saysomething"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+
+    <section class="p-3 pt-0" style="background-color: #03256c;">
+        <div class="row d-flex align-items-center">
+        <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <div class="p-3">
+                <img src="logo.png" style="width: 35px;">
+                <a style="color: #FFFFFF;text-decoration: none;" class="p-3"> Ocean One </a>
+            </div>
+        </div>
+        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <a href="#" class="p-3" style="color: #FFFFFF; text-decoration: none;"> News Letter </a>
+            <a href="#" class="p-3" style="color: #FFFFFF; text-decoration: none;"> Privacy Policy </a>
+            <a href="#" class="p-3"style="color: #FFFFFF; text-decoration: none;"> FAQs </a>
+        </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
