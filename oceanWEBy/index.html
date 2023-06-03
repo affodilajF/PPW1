@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ocean One</title>
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,14 +88,40 @@
             padding-top: 55px;
             /* width: 80%; */
         }
+        .buttonY{
+            color: #fff;
+            border-color: #fff;
+            background-color: rgba(30, 30, 51, 0.5);
+            padding: 10px;
+            border-radius: 12px;
+        }
+        .clacSampah{
+            /* background-color: rgba(225, 52, 4, 0.5) ; */
+            /* background-color: var(--PersianBlue); */
+            padding-top: 60px;
+            outline: 2px dashed red;
+            padding: 10px;
+        } #detailInputItemApa button {
+            margin-left: 20px;
+            width: 70px;
+            height: 30px;
+            /* padding: 8px 16px; */
+            background-color: var(--GreenBlue);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+  }
 
 
 
     </style>
 </head>
 <body>
+
     <!-- bootstrap javascript -->
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="JSOCEANONE.js"> </script>
 
     <section>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -131,9 +157,85 @@
                     </p>
                     <br> 
                     <div class="btn-button">
-                        <button type="button" class="btn btn-outline-custom">  &nbsp &nbsp &nbsp &nbsp &nbsp TAKE ACTION  &nbsp &nbsp &nbsp &nbsp &nbsp</button>
+    
+                        <button type="button" class="btn btn-outline-custom" onclick=takeAction()>  &nbsp &nbsp &nbsp &nbsp &nbsp TAKE ACTION  &nbsp &nbsp &nbsp &nbsp &nbsp</button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="clacSampah" id="calcSampah">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 style="color: #03256C; font-weight: 800;"> Calculator Sampah Plastik</h1>
+                    <br> 
+                    <br> 
+                    <div id="hasil"></div>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                    <!-- container sampah calculator -->
+                    <div class="sampahCalculator">
+                        <div class="detailCalculator" id="detailInputCalculator">
+                            
+                            <div class="row mb-3">
+                                <label for="botolplastik" class="col-sm-6 col-form-label">Sampah Plastik</label> 
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" id="input1">
+                                </div>
+                              </div>
+
+                              <div class="row mb-3">
+                                <label for="botolplastik" class="col-sm-6 col-form-label">Sedotan</label> 
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" id="input2">
+                                </div>
+                              </div>
+                              <div class="row mb-3">
+                                <label for="botolplastik" class="col-sm-6 col-form-label">Rokok</label>
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" id="input3">
+                                </div>
+                              </div>
+
+
+
+                        </div>
+
+                        <!-- container button -->
+                        <div class="calculatorButton" id="calculatorButton" style="padding-top: 12px;">
+                            
+
+                            <div class="row">
+                                <div class="col-lg-6 mx-auto">
+                                    <button id="addInputField" type="button" class="btn btn-outline-custom2" onclick=tambahInputFielduntukItemAPA()>  ADD ITEM  </button>
+                                </div>
+                                <div class="col-lg-6 mx-auto">
+                                    <button id="calculate" type="button" class="btn btn-outline-custom2" onclick=calculate365()>  CALCULATE </button>
+                                </div>
+                            </div>
+
+                            <!-- <div id="hasil"></div> -->
+
+                      <div style="padding-top:20px">
+                        <div id="detailInputItemApa"> </div>
+                      </div>
+
+                      <!-- <div class="detailCalculator" id="detailInputItemApa">
+                      </div> -->
+
+                      <!-- container hasil -->
+                      <div>
+                      <div id="hasil"></div>
+                      
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -329,7 +431,7 @@
                     <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.636778307021!2d106.79970621429322!3d-6.258041463203241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x46367ed2a8230800!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1620003899083!5m2!1sid!2sid"
                     width="400"
-                    height="250"
+                    height="315"
                     style="border: 0"
                     allowfullscreen=""
                     loading="lazy"></iframe>
@@ -339,14 +441,26 @@
                     <div class="impact-desc">
                         <div class="detail">
                             <div class="mb-3">
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                                <input type="email" class="form-control" id="name" placeholder="Name">
                               </div>
                               <div class="mb-3">
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
                               </div>
                               <div class="mb-3">
-                                <input class="form-control form-control" type="text" placeholder="Write your message here ..." aria-label=".form-control-lg example" style="height: 145px;">
+                                <input id = "message" class="form-control form-control" type="text" placeholder="Write your message here ..." aria-label=".form-control-lg example" style="height: 145px;">
                               </div>
+                              <div class="btn-button">
+                                <button id="submit" type="button" class="btn btn-outline-custom" onclick=tampil()>  SEND </button>
+                            </div>
+
+                            <br><br>
+
+                            <div style="color: #FFFFFF;">
+                            <h5 style="color: #FFFFFF;" id="thanks" style="color:#03256C"></h5>
+                            <p id="myname"></p>
+                            <p id="contactme"></p>
+                            <p id="saysomething"></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -370,7 +484,6 @@
         </div>
         </div>
     </section>
-
 
 </body>
 
